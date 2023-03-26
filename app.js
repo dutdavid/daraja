@@ -11,10 +11,18 @@ app.get('/access_token', (req, res) => {
     // access token
     request(
     {
-
+        url: "",
+        headers: {
+            "Authorization": "Basic " +
+        }
     },
     (error, response, body) => {
-        
+        if(error){
+            console.log(error)
+        }
+        else{
+            res.status(200).json(body)
+        }
     }
     )
 })
