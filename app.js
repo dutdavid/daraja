@@ -1,7 +1,6 @@
 const express = require('express')
-const body_parser = require('body-parser')
-const app = express();
-app.use(body_parser.json)
+const request = require('request')
+const app = express()
 
 // routes
 app.get('/', (req, res) => {
