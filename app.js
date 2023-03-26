@@ -7,7 +7,9 @@ app.get('/', (req, res) => {
     res.send("Hello world")
 })
 
-app.get('')
+app.get('/access_token', (req, res) => {
+    
+})
 
 //listen
 app.listen(80, (err, live) => {
