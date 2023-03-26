@@ -8,9 +8,12 @@ app.get('/', (req, res) => {
     res.send("Hello world")
 })
 
-app.get('/home', (req, res) => {
-    res.send("Hello we're home")
-})
 
 //listen
-app.listen(8000);
+app.listen(80, (err, live) => {
+    if(err){
+        console.error(err)
+    }
+
+    console.log("Server running on port 80")
+});
