@@ -9,11 +9,14 @@ app.get('/', (req, res) => {
 
 app.get('/access_token', (req, res) => {
     // access token
+    let url: ""
+    let auth = new Buffer.from().toString('base64');
+
     request(
     {
         url: "",
         headers: {
-            "Authorization": "Basic " +
+            "Authorization": "Basic " + auth
         }
     },
     (error, response, body) => {
