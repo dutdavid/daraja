@@ -7,6 +7,7 @@ app.get('/', (req, res) => {
     res.send("Hello world")
 })
 
+app.get('')
 
 //listen
 app.listen(80, (err, live) => {
