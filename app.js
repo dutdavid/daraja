@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/home', (req, res) => {
-    res.send("Hello world")
+    res.send("Hello we're home")
 })
 
 //listen
