@@ -9,9 +9,14 @@ app.get('/', (req, res) => {
 
 app.get('/access_token', (req, res) => {
     // access token
-    request({
+    request(
+    {
+
+    },
+    (error, response, body) => {
         
-    })
+    }
+    )
 })
 
 //listen
